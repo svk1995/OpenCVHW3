@@ -1,0 +1,5 @@
+Since there is no vector datatype in OpenCV, a matrix with a single row or a 
+column can be used to store multiple values. A 2D matrix can be created using 
+cvMat* cvCreateMat ( int rows, int cols, int type );
+The CV_MAT_ELEM macro can also be used. Multiple channel matrices can be accessed using
+CV_MAT_ELEM(matrix, type, i, j*nchannels + channel_idx) where i is a row index and j is a column index.
