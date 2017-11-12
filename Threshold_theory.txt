@@ -1,0 +1,9 @@
+Effect of varying thresholds:
+	The function is used to get a bi-level (binary) image out of a grayscale 	image or for removing a noise, that is, filtering out pixels with too small or 	too large values. Varying the values of threshold changes the pixel 	intensity and the image quality.
+What are disadvantages of Binary Thresholding?
+	In binary thresholding,  if the intensity of the pixel src(x,y) is higher than 	the threshold value, then the new pixel intensity is set to a maximum 	value. Otherwise, the pixels are set to 0. Similar method of thresholding is 	used for inverse binary thresholding.
+	This is not suitable if the lighting in the image is not uniform.
+When is adaptive threshold useful?
+	In binary thresholding technique, a global threshold value is selected.If 	the image has different lighting conditions in different areas, this is not 	useful.The algorithm calculates thresholds for small regions of the 	image 	and hence different thresholds for different regions of the same image are 	obtained and it gives us better results for images with varying illumination.
+
+
